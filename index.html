@@ -45,6 +45,13 @@
     .container3 p {
         color: blue;
     }
+
+    .button {
+        cursor: pointer;
+        padding: .5em 1em;
+        background-color: #111;
+        color: #f7f7f7;
+    }
 </style>
 <body>
     <div class="container container1">
@@ -72,5 +79,11 @@
             <button>Submit form</button>
         </fieldset>
     </form>
+    <div class="spacer"></div>
+    <!-- Custom button using tabindex and role. Aria label here is not needed but added it anyways -->
+    <div class="button" tabindex="0" role="button" aria-label="Submit">Submit</div>
+    <!-- Custom switch element -->
+    <div role="switch" tabindex="0" aria-checked="false">Toggle</div>
+    <div class="spacer"></div>
 </body>
 </html>
